@@ -1,0 +1,13 @@
+<p>
+  Coucou les héros !
+</p>
+
+<!-- <h1>Liste des Gentils&nbsp;:</h1> -->
+
+<ol class="heroes" reversed start="15">
+  <li *ngFor="let hero of heroes" [class.selected]="selectedHero == hero" (click)="selectHero(hero)" class="{{ hero.gender }}"> {{ hero.name}} ({{ hero.gender}}) </li>
+</ol>
+<app-hero-detail *ngIf="selectedHero" [hero]="selectedHero"></app-hero-detail>
+
+
+  

@@ -1,0 +1,10 @@
+<h2>Édition du méchant {{ evil.name }}</h2>
+
+<form (submit)="save()">
+  <p>
+    <label>name:<input [(ngModel)]="evil.name" [ngModelOptions]="{standalone: true}" placeholder="name"></label>
+  </p>
+  <p><input type="submit" value="Éditer"></p>
+</form>
+
+<a (click)="goBack()">Revenir en arrière</a>

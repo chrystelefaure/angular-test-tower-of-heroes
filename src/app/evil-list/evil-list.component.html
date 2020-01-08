@@ -1,0 +1,8 @@
+<p>
+  Coucou les méchants !
+</p>
+
+<ol class="evils" type="i" reversed start="15">
+  <li *ngFor="let evil of evils" [class.selected]="selectedEvil == evil" (click)="selectEvil(evil)" class="{{ evil.gender }}"> {{ evil.name }} ({{ evil.gender }}) </li>
+</ol>
+<app-evil-detail *ngIf="selectedEvil" [evil]="selectedEvil"></app-evil-detail>

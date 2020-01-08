@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+
+:root {
+    /* Evil palette color */
+    --evil-brown: hsl(0, 57%, 30%);
+    --evil-brown-lighter: hsl(0, 62%, 45%);
+    --evil-brown-dark: hsl(0, 57%, 14%);
+    --evil-grey:hsl(4, 17%, 81%);
+    --evil-black: hsl(0, 43%, 3%);
+
+    /* Hero palette color */
+    --hero-blue:hsl(209, 68%, 65%);
+    --hero-blue-dark: hsl(209, 68%, 45%);
+    --hero-red: hsl(0, 66%, 50%);
+}
+
+.footer {
+    text-align: center;
+    margin: 0 !important;
+}
+
+.w-33 {
+    width: 33%;
+}

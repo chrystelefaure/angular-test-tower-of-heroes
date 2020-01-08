@@ -1,0 +1,7 @@
+  <h2>Détails de {{evil.name | uppercase}} : </h2>
+  <div><span>id: </span>{{evil.id}}</div>
+  <div><span>gender: </span>{{evil.gender}}</div>
+  <div>Video:</div>
+  <a routerLink="/edit/{{ evil.id }}">Modifier {{ evil.name }}</a>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ evil.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 

@@ -1,0 +1,84 @@
+/* HeroesComponent's private CSS styles */
+    .selected {
+    background-color: #CFD8DC !important;
+    color: white;
+    }
+
+    
+    .evils {
+    margin: 0 0 2em 2em;
+    list-style-type: lower-roman;
+    padding: 0;
+    width: 15em;
+    
+    }
+    .evils li {
+    color: hsl(0, 0%, 70%);
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: var(--evil-brown);
+    margin: .5em;
+    border-radius: 4px;
+    text-align: center;
+    }
+    .evils li.selected:hover {
+    background-color: var(--evil-brown-lighter);
+    color: white;
+    }
+    .evils li:hover {
+    color:hsl(0, 0%, 0%);
+    background-color: var(--evil-brown-lighter);
+    left: .1em;
+    }
+    .evils .text {
+    position: relative;
+    top: -3px;
+    }
+    /* .evils .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+    } */
+    
+    .female::after {
+        content: "♦️";
+        color: hsla(0, 100%, 50%);
+        position: absolute;
+        right: 5px;
+    }
+    
+    .male::after {
+        content: "♠️";
+        color: black;
+        position: absolute;
+        right: 5px;
+    }
+
+    .female::before {
+        display: inline-block;
+        content: "♦️";
+        color: hsla(0, 100%, 50%);
+        transform: rotate(180deg);
+        position: absolute;
+        left: 5px;
+    }
+
+    .male::before {
+        content: "♠️";
+        color: black;
+        transform: rotate(180deg);
+        display: inline-block;
+        position: absolute;
+        left: 5px;
+    }
+    
